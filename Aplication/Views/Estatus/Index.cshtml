@@ -1,0 +1,13 @@
+@using Core.Entidades
+@{
+    ViewData["Title"] = "Lista de Estatus";
+}
+@model List<Estatus>
+<p>Estatus</p>
+<ul>
+@foreach(var item in Model){
+<li>
+    @item.Nombre
+</li>
+}
+</ul>
